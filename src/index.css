@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* all pages general design */
+*{
+  text-align: center;
+ 
+}
+/* NavBar design*/
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar .right-side{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-right: 100px;
+
+}
+.navbar .right-side  a{
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+  color: black;
+  
+}
+.navbar .left-side{
+  flex: 1;
+  color: black;
+}
+
+.navbar a:hover{
+  border: 1px solid blue;
+  cursor: pointer;
+}
+/* log in page */
+.login{
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  color: blue;
+  border: none;
+  box-shadow: -1px 1px 4px black;
+  border-radius: 8px;
+  
+}
+
+.login input{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 5px;
+  text-align: start;
+
+}
+.login button{
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgb(5, 5, 253);
+  color: white;
+  cursor: pointer;
 }
