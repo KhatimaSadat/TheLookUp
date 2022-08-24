@@ -15,21 +15,25 @@ function App() {
       
        <Router>
          <div className='content'>
-         <NavBar/>
+
           <Switch>
-             <Route exact path="/">
+              <Route exact path="/">
                  <Home/>
-             </Route>
-             <Route path="/AboutUs">
+              </Route>
+              <Route path="/AboutUs">
+                 <NavBar/>
                  <AboutUs/>
              </Route>
              <Route path="/featurs">
+                 <NavBar/>
                  <Featurs/>
              </Route>
              <Route path="/contact">
+                 <NavBar/>
                  <Contact/>
              </Route>
              <Route path="/login">
+                <NavBar/>
                 <LogIn/> 
              </Route>
           </Switch>

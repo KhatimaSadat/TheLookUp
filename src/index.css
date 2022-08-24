@@ -3,6 +3,16 @@
   text-align: center;
  
 }
+/* home */
+.home{
+  background-image: url("./nordwood-themes-kRNZiGKtz48-unsplash.jpg");
+  background-size:cover ;
+  width: 100%;
+  height: 100vh;
+  opacity: 1.1;
+  background-color: black;
+
+}
 /* NavBar design*/
 .navbar{
   display: flex;
@@ -32,6 +42,18 @@
 .navbar .left-side{
   flex: 1;
   color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.navbar .left-side .menuicon{
+  margin-right: 100px;
+}
+.menuicon:hover{
+  color: blue;
+  
 }
 
 .navbar a:hover{
@@ -39,18 +61,33 @@
   cursor: pointer;
 }
 /* log in page */
-.login{
+.login-container{
+  background-color: rgb(28, 28, 86);
+  height: 78vh;
+  padding-top: 40px;
+}
+.login {
   max-width: 400px;
   height: 300px;
   margin: 0 auto;
-  color: blue;
+  color: rgb(28, 28, 86);
   border: none;
   box-shadow: -1px 1px 4px black;
   border-radius: 8px;
+  padding: 8px;
+  background-color: white;
+  
+  
+}
+input{
+  outline:none;
+  text-align: left;
+  padding-left: 5px;
+  border: none;
   
 }
 
-.login input{
+ .input {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -59,13 +96,156 @@
   display: block;
   border-radius: 5px;
   text-align: start;
+  box-shadow:  1px 1px 5px black;
+  
 
 }
-.login button{
+.login .sign-in .forget{
+  display: block;
+}
+.login .sign-in button ,.login .sign-up button{
   padding: 8px;
   border: 0;
   border-radius: 8px;
-  background-color: rgb(5, 5, 253);
+  background-color: rgb(59, 174, 59);
   color: white;
   cursor: pointer;
+  width: 100%;
+  display: block;
+  box-shadow:  1px 1px 5px black;
+
+}
+.login .sign-in p ,.login .sign-up p {
+  color: black;
+  display: inline;
+}
+#sign-up{
+  display: none;
+}
+.login .sign-up-btn{
+  color: blue;
+  display: inline-block;
+  cursor: pointer;
+
+}
+/* features */
+.content-of-feature{
+  background-color: rgb(28, 28, 86);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+
+  align-items: center;
+  padding:40px;
+  height: 450px;
+}
+.content-of-feature .left-side ,.content-of-feature .right-side{
+  margin: 8px;
+  color: white;
+  flex: 1;
+}
+.content-of-feature .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  align-items: left;
+  flex: 1;
+  
+}
+.content-of-feature .left-side .section {
+  margin: 15px 0px;
+  margin-right: 8px;
+  line-height:20px;
+  width: 280px;
+}
+.content-of-feature .left-side .section h2{
+  font-size: 1.9em;
+  width: 350px;
+}
+.content-of-feature .left-side .section .icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: start ;
+
+}
+.content-of-feature .left-side .section .icon .git{
+  margin-left: 20px;
+}
+
+.content-of-feature .left-side p ,.content-of-feature .left-side a,.content-of-feature .left-side h2{
+  text-align: left;
+}
+.content-of-feature .left-side a{
+  text-decoration: none;
+  color:  rgb(108, 108, 254);
+}
+
+.content-of-feature .right-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  row-gap: 60px;
+  column-gap: 30px;
+}
+.content-of-feature .right-side .section{
+  border: 5px solid white;
+  width: 300px;
+  height: 150px;
+  position: relative;
+}
+.content-of-feature .right-side .section .empty{
+  width: 70px;
+  height: 60px;
+  background-color:rgb(28, 28, 86);
+  border: none;
+  position: absolute;
+  left: 10%;
+  top: -36px;
+  border: none;
+
+
+
+}
+.content-of-feature .right-side .section .empty .icon{
+  margin-top: -3px;
+  
+}
+.content-of-feature .right-side .section .text{
+  margin: 10%;
+}
+.content-of-feature .right-side .section .text p ,.content-of-feature .right-side .section .text h3{
+ text-align: left;
+ 
+}
+.content-of-feature .right-side .section .text .more{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: rgb(108, 108, 254);
+  
+}
+@media (max-width : 1090px){
+  
+  .content-of-feature .right-side{
+    grid-template-columns: 1fr 1fr;
+  }
+  .content-of-feature .left-side .section h2{
+    width: 270px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1000px){
+  .content-of-feature{
+    height: 800px;
+    padding: 50px;
+  }
+  .content-of-feature .right-side{
+    grid-template-columns: 1fr ;
+  }
+ 
+  .content-of-feature .left-side .section h2{
+    width: 300px;
+  }
 }
