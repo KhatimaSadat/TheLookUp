@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import AboutUs from './AboutUs';
 import Contact from './Contsct';
 import Featurs from './Featurs';
+import Footer from './Footer';
 import Home from './Home';
 import LogIn from './LogIn';
 import NavBar from './NavBar';
@@ -15,28 +16,26 @@ function App() {
       
        <Router>
          <div className='content'>
-
+         <NavBar/>
           <Switch>
-              <Route exact path="/">
+             <Route exact path="/">
                  <Home/>
-              </Route>
-              <Route path="/AboutUs">
-                 <NavBar/>
+                
+             </Route>
+             <Route path="/AboutUs">
                  <AboutUs/>
              </Route>
              <Route path="/featurs">
-                 <NavBar/>
                  <Featurs/>
              </Route>
              <Route path="/contact">
-                 <NavBar/>
                  <Contact/>
              </Route>
              <Route path="/login">
-                <NavBar/>
                 <LogIn/> 
              </Route>
           </Switch>
+          <Footer/>
          </div>
        </Router>
 
