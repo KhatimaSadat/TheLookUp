@@ -1,11 +1,12 @@
 import {Spin as Humburger} from 'hamburger-react';
+import logo from './logo.png';
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const NavBar = () => {
   return (  
          <nav className='navbar'>
           <nav className="left-side">
             <div className="humburgerIcon"> <Humburger  rounded color='white' size={30} /></div>
-             <h2 className="lookup">Thelookup</h2>
+            <img src={logo} className="logo" alt=" " />
           </nav> 
           <nav className='right-side'>
              <Link to="/" ><span className="span-home-nav" > HOME</span> </Link>
