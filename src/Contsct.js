@@ -1,14 +1,17 @@
 import {FaInstagramSquare} from 'react-icons/fa'
 import {FaFacebookSquare} from 'react-icons/fa'
-import {FaTwitterSquare} from 'react-icons/fa'
-import {HiLocationMarker} from 'react-icons/hi'
-import { MdEmail} from 'react-icons/md'
-import {FaPhoneAlt} from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import {FaTwitterSquare} from 'react-icons/fa';
+import {HiLocationMarker} from 'react-icons/hi';
+import { MdEmail} from 'react-icons/md';
+import {FaPhoneAlt} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import CostomerReview from "./CostomerReview";
+
 
 const Contact = () => {
     return ( 
       <div  className="contact">
+         <CostomerReview/>
         <div className="section-one">
                 <p className='contact-use'>contact.use</p>
 
