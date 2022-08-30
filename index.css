@@ -1,0 +1,120 @@
+/* all pages general design */
+*{
+  text-align: center;
+ 
+}
+/* NavBar design*/
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+.navbar .right-side{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-right: 100px;
+
+}
+.navbar .right-side  a{
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+  color: black;
+  
+}
+.navbar .left-side{
+  flex: 1;
+  color: black;
+}
+
+.navbar a:hover{
+  border: 1px solid blue;
+  cursor: pointer;
+}
+/* log in page */
+.login{
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  color: blue;
+  border: none;
+  box-shadow: -1px 1px 4px black;
+  border-radius: 8px;
+  
+}
+
+.login input{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 5px;
+  text-align: start;
+
+}
+.login button{
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgb(5, 5, 253);
+  color: white;
+  cursor: pointer;
+}
+/* footer */
+.footer{
+  background-color: rgb(28, 28, 86);
+  color: white;
+  padding: 80px;
+  padding-top: 40px;
+
+  
+}
+.footer .top{
+  display: flex;
+  flex-direction:column ;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
+ 
+
+}
+.footer .top p{
+  width: 300px;
+  text-align: left;
+}
+.footer .buttom{
+  display: flex;
+  flex-direction: row ;
+  justify-content: start;
+  align-items: flex-start;
+
+}
+.footer .buttom .section{
+  margin: 50px;
+  
+  text-align: left;
+}
+.footer .buttom #sec-1{
+  margin-left: 0px;
+}
+.footer .buttom .section p, .footer .buttom .section h2{
+  text-align: left;
+}
+.footer .top h1{
+  margin-left: 40px;
+}
+.footer .buttom .section .bottom{
+  color: white;
+  border: 2px solid white;
+  padding: 4px;
+  width: 60px;
+}
