@@ -15,7 +15,7 @@ const CostomerReview = () => {
       contain.scrollBy(750,0);
     }
     return ( 
-       <div id="general">
+
              <div className="cutomer-container" id="customer-container">
             <div className="Header">Return to our page</div>
             <div className="wrapper" id="wrapper">
@@ -66,7 +66,7 @@ const CostomerReview = () => {
             <button>Cutomer review </button>
 
         </div>
-       </div>
+       
      );
 }
  
