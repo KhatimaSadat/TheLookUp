@@ -63,7 +63,7 @@ const LogIn = () => {
                     <p>dont have account? </p> 
                     <div  className="sign-up-btn" onClick={handleSignup}>Sign up</div> 
               </div>
-                <div className="sign-up" id="sign-up">
+              <div className="sign-up" id="sign-up">
                   <h2>Sign up</h2>
                     <form onSubmit={handleSubmit}>
                        

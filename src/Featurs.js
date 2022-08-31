@@ -11,7 +11,7 @@ const Featurs = () => {
                 <div className="left-side">
                       <div className='section'>
                         <p>TheLookUP Features</p>
-                        <h2>We deliver you best</h2>
+                        <h2>We deliver you the best</h2>
                       </div>
                       <div className='section'>
                         <p>It is a long establish fact that a reader will be distributed by the readable</p>

@@ -15,24 +15,24 @@ const CostomerReview = () => {
       contain.scrollBy(750,0);
     }
     return ( 
-
-             <div className="cutomer-container" id="customer-container">
+       <div id="general">
+         <div className="cutomer-container" id="customer-container">
             <div className="Header">Return to our page</div>
             <div className="wrapper" id="wrapper">
               <div className="control">
                 <div ><ArrowForward fontSize="small" /></div>
                 <div ><ArrowBack fontSize="small" /></div>
               </div>
-               <div className="section">
+              <div className="section">
                    <div><img src={picture}/></div>
                    <div className="paragraphe">
-                     <h5>Name of the user</h5>
-                     <div className="comma">,,</div>
-                     <p>Information of the user Information of the user Information of the user</p>
-                     <div className="footer"> <div className="email">emailoftheuser@gmail.</div><div className="detail">Detail</div></div>
+                      <h5>Name of the user</h5>
+                      <div className="comma">,,</div>
+                      <p>Information of the user Information of the user Information of the user</p>
+                      <div className="footer"> <div className="email">emailoftheuser@gmail.</div><div className="detail">Detail</div></div>
                    </div>
-               </div> 
-               <div className="control">
+              </div> 
+              <div className="control">
                 <div ><ArrowForward  fontSize="small"/></div>
                 <div ><ArrowBack fontSize="small"/></div>
               </div>
@@ -46,27 +46,27 @@ const CostomerReview = () => {
                    </div>
                </div> 
                <div className="control">
-                <div ><ArrowForward fontSize="small"/></div>
-                <div ><ArrowBack fontSize="small" /></div>
-              </div>
+                  <div ><ArrowForward fontSize="small"/></div>
+                  <div ><ArrowBack fontSize="small" /></div>
+               </div>
                <div className="section">
                    <div><img src={picture2}/></div>
                    <div className="paragraphe">
-                     <h5>Name of the user</h5>
-                     <div className="comma">,,</div>
-                     <p>Information of the user Information of the user Information of the user</p>
-                     <div className="footer"> <div className="email">emailoftheuser@gmail.</div><div className="detail">Detail</div></div>
+                      <h5>Name of the user</h5>
+                      <div className="comma">,,</div>
+                      <p>Information of the user Information of the user Information of the user</p>
+                      <div className="footer"> <div className="email">emailoftheuser@gmail.</div><div className="detail">Detail</div></div>
                    </div>
                </div> 
                <div className="control">
-                <div ><ArrowForward fontSize="small"/></div>
-                <div ><ArrowBack fontSize="small" /></div>
+                  <div ><ArrowForward fontSize="small"/></div>
+                  <div ><ArrowBack fontSize="small" /></div>
               </div>
             </div>
             <button>Cutomer review </button>
 
-        </div>
-       
+         </div>
+       </div>
      );
 }
  
