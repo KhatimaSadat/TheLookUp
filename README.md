@@ -1,4 +1,7 @@
 # Getting Started with Create React App
+for running the last version you should run these commands on your terminal 
+npm install react-icons 
+npm install hamburger-react 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
